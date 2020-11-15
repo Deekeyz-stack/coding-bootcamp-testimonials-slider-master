@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('./images/pattern-curve.svg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 40%;
+}
+
+.container{
+    background-image: url('./images/pattern-bg.svg');
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: center right;
+    max-width: 100%;
+    width: 1280px;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    min-height: 100vh;
+    margin-left: 200px;
+}
+
+.article{
+    background-image: url('./images/pattern-quotes.svg');
+    background-repeat: no-repeat;
+    background-position: top top;
+    background-size: 20%;
+    width: 50%;
+    margin-left: 60px;
+    z-index: 5;
+}
+
+#info{
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.center{
+    display: flex;
+}
+
+#Author{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+#title{
+    margin-top: 20px;
+    padding-left: 10px;
+    opacity: 0.5;
+}
+
+.img-container{
+    background-size: 20%;
+    width: 60%;
+    position: relative;
+}
+
+.img-container img{
+    width: 420px;
+    height: 400px;
+    margin-left: -40px;
+}
+
+.arrows{
+    position: absolute;
+    bottom: 19%;
+    left: 52%;
+    background: #fff;
+    width: 95px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.link{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 10px 15px;
+}
+
+@media screen and (max-width: 375px) {
+
+    .section{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .article, .img-container{
+        width: 100%;
+    }
+
+    .container{
+        background-position: top center;
+        background-size: contain;
+    }
+
+    .article{
+        margin-top: 40px;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    #info{
+        font-size: 18px;
+        text-align: center;
+        opacity: 0.8;
+        letter-spacing: 1px;
+        margin: 0px 10px 0px 0px;
+    }
+
+    #Author{
+        font-size: 1rem;
+    }
+
+    .center{
+        display: block;
+    }
+
+    #title{
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-container img{
+        width: 250px;
+        height: 250px;
+        margin: 30px 20px 0px 50px;
+    }
+
+    .arrows{
+        top: 51%;
+        left: 38%;
+    }
+}
